@@ -40,16 +40,29 @@ gem 'jquery-rails'
 # To use debugger
 ## gem 'debugger'
 
-# testings
-group :development, :test do
-  gem 'rspec-rails'
-  gem 'debugger'
-   #gem 'therubyracer'
-end
-
 group :test do
   gem 'factory_girl_rails'
 end
 
-gem 'execjs'
-gem 'thin'
+
+group :development, :test do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'meta_request'
+  gem 'rspec-rails'
+
+  gem 'debugger'
+  #gem 'therubyracer'
+end
+
+#authentication
+gem "devise"
+
+# for rails c
+gem 'rb-readline'
+
+#for view
+gem 'twitter-bootstrap-rails'
+gem 'simple_form'
+gem 'haml'
+gem 'haml-rails'
